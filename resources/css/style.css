@@ -1,7 +1,7 @@
 html {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  color: grey;
+  color: #182840;
 }
 
 .bold {
@@ -24,7 +24,7 @@ html {
 }
 
 a {
-  color: inherit;
+  color: #182840;
   text-decoration: none;
   font-style: italic;
 }
@@ -63,6 +63,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #DCAE1D;
 }
 
 .logotype {
@@ -70,6 +71,7 @@ header {
   padding-left: 1.5rem;
   display: flex;
   align-items: center;
+  color: #182840;
 }
 
 nav {
@@ -81,7 +83,6 @@ nav {
 nav span a{
   padding: 1rem;
   text-decoration: none;
-  color: grey;
   font-style: normal;
 }
 
@@ -94,7 +95,7 @@ nav span a{
 
 /* Banner section */
 .banner {
-  background-color: lightgrey;
+  background-color: #182840;
   padding: 2rem 1.5rem;
   display: flex;
 }
@@ -109,24 +110,26 @@ nav span a{
   flex-flow: column;
   justify-content: center;
   width: 30%;
+  color: white;
 }
 
 .banner h3 {
   margin: 2rem 0;
   font-family: "Roboto", sans-serif;
-  font-weight: normal;
+  font-weight: lighter;
 }
 
 .button {
   width: 95%;
   text-align: center;
-  background-color: darkgrey;
+  background-color: #DCAE1D;
   padding: 0.5rem;
 }
 
 .button span {
   font-size: 1.2rem;
   font-weight: bold;
+  color: #182840;
 }
 
 @media only screen and (max-width:650px) {
@@ -154,12 +157,14 @@ nav span a{
   }
 
 /* Articles section */
+  .articles {
+    padding: 0 1.5rem;
+  }
 
   .main {
     height: 100%;
     width: 60%;
-    border-right: solid 1px lightgrey;
-    padding: 2rem 1.5rem;
+    padding: 2rem 0;
   }
 
   .main img {
@@ -175,19 +180,24 @@ nav span a{
   }
 
   .main span {
-    font-weight: bold;
+    font-style: italic;
   }
 
   .column-articles {
     height: 100%;
-    width: 40%;
+    width: 35%;
+    margin-left: 1.5rem;
+  }
+
+  .articles.column-articles {
+    margin-top: 1rem;
   }
 
   .small {
     display: flex;
     height: 33%;
     padding: 1rem;
-    border: solid 1px lightgrey;
+    border: solid 1px #DCAE1D;
     margin: 1px;
   }
 
@@ -208,7 +218,7 @@ nav span a{
   }
 
   .highlight {
-    background-color: lightgrey;
+    background-color: #DCAE1D;
   }
 
 @media only screen and (max-width:650px) {
@@ -240,12 +250,13 @@ nav span a{
 
 /* Courses */
   .courses {
-    background-color: lightgrey;
+    background-color: #182840;
     text-align: center;
   }
 
   .courses h2 {
     padding: 2rem;
+    color: white;
   }
 
   .grid {
@@ -260,6 +271,7 @@ nav span a{
     background-color: white;
     margin-bottom: 2rem;
     text-align: left;
+    border: 1px solid white;
   }
 
   .article-grid img {
@@ -275,7 +287,7 @@ nav span a{
   }
 
   .article-grid p {
-    margin: 0 0 1rem 1rem;
+    margin: 0 0.5rem 1rem 1rem;
   }
 
   @media only screen and (max-width:650px) {
@@ -300,6 +312,9 @@ nav span a{
   }
 
 /* Thesis section */
+.thesis {
+  padding: 0 1.5rem;
+}
 
 .thesis h2 {
   padding: 2rem 0;
@@ -338,6 +353,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem 3rem 1.5rem;
+  background-color: #DCAE1D;
 }
 
 /* General media queries */
