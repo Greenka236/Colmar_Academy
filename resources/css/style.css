@@ -1,0 +1,327 @@
+html {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 16px;
+  color: grey;
+}
+
+.bold {
+  font-weight: bold;
+  color: black;
+}
+
+.center-text {
+  text-align: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+/* Navigation */
+
+header {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logotype {
+  height: 2rem;
+  padding-left: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+nav span a{
+  padding: 1rem;
+  text-decoration: none;
+  color: grey;
+}
+
+/* Banner section */
+.banner {
+  background-color: lightgrey;
+  padding: 2rem 1.5rem;
+  display: flex;
+}
+
+.banner img {
+  width: 60%;
+  align-self: center;
+}
+
+.banner .text-box {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.banner h3 {
+  margin: 2rem 0;
+}
+
+.button {
+  width: 95%;
+  text-align: center;
+  background-color: darkgrey;
+  padding: 0.5rem;
+}
+
+.button span {
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width:650px) {
+  .banner {
+    flex-flow: column;
+    padding: 0;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+
+  .banner .text-box {
+    margin: 2rem 1rem;
+    width: 100%;
+  }
+
+  .banner h3 {
+    margin: 2rem 0 1.5rem 0;
+  }
+  }
+
+/* Articles section */
+  .articles {
+    display: flex;
+  }
+
+  .main {
+    height: 100%;
+    width: 60%;
+    border-right: solid 1px lightgrey;
+    padding: 2rem 1.5rem;
+  }
+
+  .main img {
+    width: 100%;
+  }
+
+  .main h2 {
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  .main p {
+    padding-bottom: 2rem;
+  }
+
+  .main span {
+    font-weight: bold;
+  }
+
+  .column-articles {
+    height: 100%;
+    width: 40%;
+  }
+
+  .small {
+    display: flex;
+    height: 33%;
+    padding: 1rem;
+    border: solid 1px lightgrey;
+    margin: 1px;
+  }
+
+  .small img {
+    width: 35%;
+    align-self: center;
+    padding-right: 1rem;
+  }
+
+  .text {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .text p {
+    padding: 1rem 0;
+  }
+
+  .highlight {
+    background-color: lightgrey;
+  }
+
+@media only screen and (max-width:650px) {
+  .column-articles {
+    width: 100%;
+  }
+
+  .small {
+    display: flex;
+    flex-flow: column;
+    border: solid 0px white;
+    margin: 0;
+  }
+
+  .small img {
+    width: 100%;
+    align-self: center;
+    padding: 0;
+  }
+
+  .text {
+    padding: 2rem 1rem;
+  }
+
+  .highlight {
+    background-color: white;
+  }
+}
+
+/* Courses */
+  .courses {
+    background-color: lightgrey;
+    text-align: center;
+  }
+
+  .courses h2 {
+    padding: 2rem;
+  }
+
+  .grid {
+    display: flex;
+    padding: 0 3.5rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .article-grid {
+    width: 31%;
+    background-color: white;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .article-grid img {
+    width: 100%;
+  }
+
+  .article-grid h3 {
+    margin: 1rem 0 0 1rem;
+  }
+
+  .article-grid h6 {
+    margin: 0.5rem 1rem;
+  }
+
+  .article-grid p {
+    margin: 0 0 1rem 1rem;
+  }
+
+  @media only screen and (max-width:650px) {
+    .courses {
+      background-color: white;
+      border-top: 1px solid lightgrey;
+      border-bottom: 1px solid lightgrey;
+    }
+
+    .mobile.grid {
+      text-align: left;
+      display: flex;
+      flex-flow: column;
+      margin-bottom: 2rem;
+    }
+
+    .mobile.grid h3{
+      padding: 1rem;
+      background-color: lightgrey;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+/* Thesis section */
+
+.thesis h2 {
+  padding: 2rem 0;
+}
+
+.thesis-wrapper {
+  display: flex;
+}
+
+video {
+  width: 100%;
+}
+
+.no-padding {
+  padding-top: 0;
+}
+
+.no-border {
+  border: 0px solid white;
+}
+
+@media only screen and (max-width:650px) {
+  .thesis h2 {
+    padding: 2rem 0 1rem 0;
+  }
+
+  .main.no-padding {
+    width: 100%;
+    padding: 0 0 1.5rem 0;
+  }
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid lightgrey;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem 3rem 1.5rem;
+}
+
+/* General media queries */
+@media only screen and (min-width:650px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:650px) {
+  .desktop {
+    display: none;
+  }
