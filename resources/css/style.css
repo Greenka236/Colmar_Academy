@@ -47,8 +47,15 @@ h3 {
   font-family: "Roboto Slab", serif;
 }
 
+h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+}
+
 h6 {
   font-size: 1rem;
+  font-style: italic;
 }
 
 p {
@@ -86,7 +93,7 @@ nav span a{
   font-style: normal;
 }
 
-@media only screen and (max-width:650px) {
+@media only screen and (max-width:808px) {
   nav {
     width: 75%;
     justify-content: space-around;
@@ -132,7 +139,14 @@ nav span a{
   color: #182840;
 }
 
-@media only screen and (max-width:650px) {
+@media only screen and (max-width:966px) and (min-width:808px) {
+  .banner .text-box {
+    padding: 0 1.5rem;
+  }
+
+}
+
+@media only screen and (max-width:808px) {
   .banner {
     flex-flow: column;
     padding: 0;
@@ -143,8 +157,8 @@ nav span a{
   }
 
   .banner .text-box {
-    margin: 2rem 1rem;
-    width: 100%;
+    padding: 2rem 1rem;
+    width: auto;
   }
 
   .banner h3 {
@@ -153,6 +167,7 @@ nav span a{
 
   .wrapper.flexbox {
     flex-flow: column;
+    padding: 0;
   }
   }
 
@@ -207,10 +222,15 @@ nav span a{
     padding-right: 1rem;
   }
 
+  .small a {
+    color: #1991F5;
+  }
+
   .text {
     display: flex;
     flex-flow: column;
     justify-content: center;
+    width: 60%;
   }
 
   .text p {
@@ -219,18 +239,34 @@ nav span a{
 
   .highlight {
     background-color: #DCAE1D;
+    margin-bottom: 1rem;
   }
 
-@media only screen and (max-width:650px) {
+  .small.highlight a {
+    color: white;
+  }
+
+@media only screen and (max-width:808px) {
+
   .column-articles {
     width: 100%;
   }
+}
+
+@media only screen and (max-width:808px) {
+  .articles {
+    padding: 0;
+  }
+
+  .column-articles {
+    width: auto;
+    margin-left: 0;
+  }
 
   .small {
-    display: flex;
-    flex-flow: column;
     border: solid 0px white;
     margin: 0;
+    flex-flow: column;
   }
 
   .small img {
@@ -283,16 +319,16 @@ nav span a{
   }
 
   .article-grid h6 {
-    margin: 0.5rem 1rem;
+    margin: 1rem 1rem 0.5rem 1rem;
   }
 
   .article-grid p {
     margin: 0 0.5rem 1rem 1rem;
   }
 
-  @media only screen and (max-width:650px) {
+  @media only screen and (max-width:808px) {
     .courses {
-      background-color: white;
+      background-color: #182840;;
       border-top: 1px solid lightgrey;
       border-bottom: 1px solid lightgrey;
     }
@@ -306,7 +342,7 @@ nav span a{
 
     .mobile.grid h3{
       padding: 1rem;
-      background-color: lightgrey;
+      background-color: white;
       margin-bottom: 0.5rem;
     }
   }
@@ -336,7 +372,7 @@ video {
   border: 0px solid white;
 }
 
-@media only screen and (max-width:650px) {
+@media only screen and (max-width:808px) {
   .thesis h2 {
     padding: 2rem 0 1rem 0;
   }
@@ -357,13 +393,13 @@ footer {
 }
 
 /* General media queries */
-@media only screen and (min-width:650px) {
+@media only screen and (min-width:808px) {
   .mobile {
     display: none;
   }
 }
 
-@media only screen and (max-width:650px) {
+@media only screen and (max-width:808px) {
   .desktop, .grid.wrapper.flexbox {
     display: none;
   }
